@@ -1,0 +1,8 @@
+kind: Pod
+apiVersion: v1
+metadata:
+  name: sinatra-pod
+spec:
+  containers:
+    - name: sinatra-container
+      image: sinatra:0.1
