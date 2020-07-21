@@ -2,6 +2,12 @@ kind: Pod
 apiVersion: v1
 metadata:
   name: sinatra-pod
+  # Define labels for the pod
+  labels:
+    release: stable
+    environment: dev
+    tier: backend
+    region: us
 spec:
   containers:
     - name: sinatra-container
